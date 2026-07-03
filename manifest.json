@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Anti-Delay Copa YouTube",
+  "version": "1.0",
+  "description": "Força o player do YouTube Live a rodar no menor atraso possível.",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
